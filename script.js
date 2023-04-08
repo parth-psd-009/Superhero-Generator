@@ -6,7 +6,7 @@ const heroDiv = document.getElementById('hero-div');
 
 
 // CONSTANTS
-// https://www.superheroapi.com/api.php/102964106046700/search/iron
+
 
 const apiURL = 'https://superheroapi.com/api.php/'
 const accessToken = '102964106046700'
@@ -43,7 +43,7 @@ const searchHero = () => {
                 }
             })
         })
-        .catch(err => err)
+        .catch(err => heroDiv.innerHTML = "No Hero Found...");
 }
 
 
