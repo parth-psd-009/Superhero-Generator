@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Quicksand', sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(to left, rgb(255 255 255), rgb(75 122 202));
+}
+
+.heading {
+    font-size: 3rem;
+    font-weight: bold;
+    font-weight: 700;
+}
+
+body>* {
+    margin: 10px 0;
+}
+
+.search-box {
+    padding: 10px 20px;
+    outline: none;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 20px;
+    transition: 300ms ease-in-out;
+}
+
+
+.hero-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.2rem;
+    line-height: 1;
+}
+
+.hero-div img {
+    margin: 50px;
+    width: 50%;
+    /* height: 400px;
+    width: 300px; */
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+    transition: 300ms ease-in-out;
+}
+
+.hero-div h4 {
+    margin: 30px;
+}
+
+.hero-div img:hover {
+    transform: scale(1.2);
+    box-shadow: 0 0 50px rgba(0, 0, 0, 1);
+}
+
+.hero-div>*:hover {
+    cursor: default;
+    transform: scale(1.2);
+    transition: 300ms ease-in-out;
+}
+
+.btn {
+    cursor: pointer;
+    padding: 10px 15px;
+    width: 200px;
+    border: none;
+    border-radius: 20px;
+    transition: 300ms ease-in-out;
+}
+
+.btn:hover {
+    color: white;
+    background-color: black;
+    transform: scale(1.1);
+}
+
+.btn:focus {
+    border: none;
+    outline: none;
+    color: white;
+    background-color: black;
+    transform: scale(1.1);
+}
+
+
+
+
+@media (max-width:768px) {
+    .heading {
+        font-size: 2rem;
+    }
+
+    .hero-div img {
+        width: 40%;
+        margin: 20px;
+        border-radius: 15px;
+    }
+
+    .hero-div {
+        font-size: 1rem;
+    }
+
+    .search-box {
+        padding: 15px;
+        font-size: 1rem;
+    }
+
+    .btn {
+        padding: 10px;
+        width: 150px;
+        font-size: 0.9rem;
+    }
+
+}
+
+
+@media (max-width:480px) {
+    .heading {
+        font-size: 1rem;
+    }
+
+    .hero-div img {
+        width: 30%;
+        margin: 20px;
+        border-radius: 15px;
+    }
+
+    .hero-div {
+        font-size: 0.8rem;
+    }
+
+    .search-box {
+        padding: 10px;
+        font-size: 0.8rem;
+    }
+
+    .btn {
+        padding: 8px;
+        width: 100px;
+        font-size: 0.75rem;
+    }
+}
