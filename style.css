@@ -10,7 +10,7 @@ body {
     justify-content: space-between;
     align-items: center;
     background: linear-gradient(to left, rgb(255 255 255), rgb(75 122 202));
-    height:100vh;
+    height:100%;
 }
 
 .heading {
